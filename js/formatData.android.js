@@ -4,7 +4,7 @@ export default ({
   subject,
   attachments,
 }) => ({
-  address: recipients.join(';'),
+  address: (recipients || []).join(';'),
   body,
   subject,
   attachment: attachments[0],
